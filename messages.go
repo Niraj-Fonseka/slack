@@ -133,7 +133,7 @@ type Msg struct {
 	Metadata SlackMetadata `json:"metadata,omitempty"`
 
 	// Block type Message
-	Blocks Blocks `json:"blocks,omitempty"`
+	Blocks Blocks `json:"-,omitempty"`
 	// permalink
 	Permalink string `json:"permalink,omitempty"`
 }
